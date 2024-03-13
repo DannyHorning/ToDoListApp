@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     StyleSheet,
     Pressable,
@@ -7,14 +8,15 @@ import {
     ScrollView,
   } from 'react-native';
 
-function ToDoList({items}) {
+function ToDoList({tasks}) {
+  
   return (
     <>
     <ScrollView>
-      {items.map((item, index) => (
+      {tasks.map((task, index) => (
         <Pressable key={index}>
           <View style={[styles.task]}>
-            <Text style={styles.taskText}>{item}</Text>
+            <Text style={styles.taskText}>{task}</Text>
           </View>
         </Pressable>))}
       </ScrollView>
