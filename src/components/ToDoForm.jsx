@@ -9,9 +9,6 @@ import {
 function ToDoForm({addTask}) {
   const [taskText, setTaskText] = React.useState('');
 
-  const handleAddItem = () => {
-    setTasks([...Tasks, TextInput]);
-  };
   return (
     <>
        <View style={styles.form}>
